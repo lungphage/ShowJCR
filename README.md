@@ -2,31 +2,23 @@
 
 # ShowJCR
 
-## 前言
-
-科研成果经常以发表不同层次的国际学术期刊为体现，因此评价国际学术期刊影响力至关重要。中国科研人员常用的期刊评价标准包括JCR（[Journal Citation Reports](https://jcr.clarivate.com/)）和中科院分区表（[中国科学院文献情报中心期刊分区表](http://www.fenqubiao.com/)）等。中科院分区表在2019年试行升级版，并在2019-2021的3年过渡期同时发布基础版和升级版，便于用户单位过渡、调整。自2022年开始，将只发布升级版。因此，中科院分区表升级版已经成为科研人员选择学术期刊的重要依据。
-
-中科院分区表升级版设计了“期刊超越指数”取代JCR中的期刊影响因子（Impact Factor）指标，没有提供期刊的影响因子作为参考。
-
-此外，中科院分区表于2020年12月31日发布[《国际期刊预警名单（试行）》](https://mp.weixin.qq.com/s/xbyJFtR2lezv6CyRrkxsdA)，该名单没有体现在升级版中。
-
-针对上述需求，为了科研人员更方便直观的获取国际学术期刊影响力评价，因此在2020年中科院分区表升级版的基础之上，补充展示了期刊影响因子和国际期刊预警等级。
-
 ## 数据来源
 
-中科院分区表升级版数据来源于[advanced.fenqubiao.com](http://advanced.fenqubiao.com)，信息包括期刊是否为Review、是否为Open Access、Web of Science收录类型（分为SCI、SCIE、SSCI、ESCI等）、是否为Top期刊、大类分区信息、（一至多个）小类分区信息，最新为2025年版（2025年3月20日发布），并保留2023年版、2022年版作为对比。
+新锐期刊分区表来源于https://www.xr-scholar.com，最新为2026年版（2026年3月24日发布），涵盖但不限于 SCIE、SSCI、ESCI 等核心来源，共22299 种期刊和15种重要会议论文集（计算机领域）。同时，不再单独发布预警名单，对预警期刊标记“Under Review”。
 
-JCR期刊影响因子和分区更新到2024版（2025年6月18日发布），并保留2023年、2022年影响因子和分区。
+中科院分区表升级版数据来源于[advanced.fenqubiao.com](http://advanced.fenqubiao.com)，信息包括期刊是否为Review、是否为Open Access、Web of Science收录类型（分为SCI、SCIE、SSCI、ESCI等）、是否为Top期刊、大类分区信息、（一至多个）小类分区信息。保留最新的2025年版（2025年3月20日发布）作为对比。
+
+JCR期刊影响因子和分区更新到2024版（2025年6月18日发布），并保留2023年影响因子和分区作为对比。
 
 国际期刊预警等级来源于[《国际预警期刊名单》（2020、2021、2023、2024、2025年）](https://ewl.fenqubiao.com/#/README)，2024年版不再区分预警等级而改为预警原因。
 
-中国计算机学会（CCF）[推荐国际学术会议和期刊目录（2022年）](https://www.ccf.org.cn/Academic_Evaluation/By_category/)，[计算领域高质量科技期刊分级目录（2022年）](https://www.ccf.org.cn/ccftjgjxskwml/)。
+中国计算机学会（CCF）[推荐国际学术会议和期刊目录（2026年）](https://www.ccf.org.cn/Academic_Evaluation/By_category/)，[计算领域高质量科技期刊分级目录（2025年）](https://www.ccf.org.cn/ccftjgjxskwml/)。
 
 ### SQLite3数据库生成步骤
 
 国际期刊信息的原始数据随附在源代码中。
 
-使用[DB Browser for SQLite](https://sqlitebrowser.org/)创建jcr.db，csv格式原始数据的导入顺序（jcr.db中的表名）为JCR2024、JCR2023、JCR2022、GJQKYJMD2025、GJQKYJMD2024、GJQKYJMD2023、GJQKYJMD2021、GJQKYJMD2020、CCF2022、CCFT2022、FQBJCR2025、FQBJCR2023、FQBJCR2022。
+使用[DB Browser for SQLite](https://sqlitebrowser.org/)创建jcr.db，csv格式原始数据的导入顺序（jcr.db中的表名）为JCR2024、JCR2023、GJQKYJMD2025、GJQKYJMD2024、GJQKYJMD2023、GJQKYJMD2021、GJQKYJMD2020、CCF2026、CCFT2025、XR2026、XR2026Conferences、FQBJCR2025。
 
 ### 导入新的分区信息
 
