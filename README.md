@@ -14,6 +14,13 @@ JCR期刊影响因子和分区更新到2024版（2025年6月18日发布），并
 
 中国计算机学会（CCF）[推荐国际学术会议和期刊目录（2026年）](https://www.ccf.org.cn/Academic_Evaluation/By_category/)，[计算领域高质量科技期刊分级目录（2025年）](https://www.ccf.org.cn/ccftjgjxskwml/)。
 
+### 新锐期刊分区表2026年版特殊情况说明
+
+1. ADVANCED ENGINEERING MATERIALS、Soft Science具有两个大类分区，均为材料科学和工程技术；
+
+2. AUSTRALASIAN PLANT PATHOLOGY、HEART RHYTHM具有两本同名期刊，但是两者的ISSN号不一样。
+
+
 ### SQLite3数据库生成步骤
 
 国际期刊信息的原始数据随附在源代码中。

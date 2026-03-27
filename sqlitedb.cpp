@@ -207,7 +207,8 @@ QStringList SqliteDB::sortSpecialStrings(const QStringList &input) {
         {"JCR", 1},
         {"CCF", 2},
         {"CCFT", 3},
-        {"FQBJCR", 4}
+        {"XR", 4},
+        {"FQBJCR", 5}
     };
     // 正则表达式提取前缀和年份
     const QRegularExpression kPattern("^(\\D+)(\\d+)$"); // 非数字部分+数字部分
