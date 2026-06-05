@@ -2,6 +2,8 @@
 # ShowJCR Enhanced (v2026-2.0)
 
 > 本项目基于 [hitfyd/ShowJCR](https://github.com/hitfyd/ShowJCR) v2026-1.1 修改，原作者 hitfyd，许可证 GPL-3.0。
+> 
+> 代码优化及功能开发使用 [Mimo](https://github.com/Xiaomi/mimo) 模型（小米 AI）辅助完成。
 
 ### 新增功能
 
