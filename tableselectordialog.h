@@ -16,7 +16,7 @@ class TableSelectorDialog : public QDialog
 
 public:
     explicit TableSelectorDialog(const QStringList &tables, const QStringList &selectedTables, QWidget *parent = nullptr);
-    ~TableSelectorDialog();
+    ~TableSelectorDialog() override;
     const QStringList selectedTables();
     const QStringList getAllTables();
 

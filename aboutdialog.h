@@ -13,7 +13,7 @@ class AboutDialog : public QDialog
 
 public:
     explicit AboutDialog(const QString &appName, const QString &version, const QString &email, const QString &codeURL, const QString &updateURL, QWidget *parent = nullptr);
-    ~AboutDialog();
+    ~AboutDialog() override;
 
 private slots:
     void on_pushButton_email_clicked();
